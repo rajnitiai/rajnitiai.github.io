@@ -17,20 +17,23 @@
       
     }
 
-    #particles-js {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-image: url("poster.svg");
-      background-repeat: no-repeat;
-      z-index: -1;
-    }
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("poster.svg");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
 
-    #header {
-      text-align: center;
-      color: #fff;
-      padding: 40px 0;
-    }
+#header {
+  text-align: center;
+  color: #fff;
+  padding: 40px 0;
+  position: relative; /* Add this line */
+  z-index: 1; /* Add or increase the z-index value */
+}
+
 
     #logo {
       max-width: 200px;
