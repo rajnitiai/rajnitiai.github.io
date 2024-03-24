@@ -6,6 +6,10 @@
   <title>RajnitiAI </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!-- favicon -->
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -13,7 +17,7 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: "League Spartan", sans-serif;
       background-image: url("poster.svg");
       background-repeat: repeat;
      
@@ -22,7 +26,7 @@
     #particles-js {
       position: absolute;
       width: 100%;
-      height: 30%;
+      height: 100%;
       z-index: -1;
     }
 
@@ -38,11 +42,28 @@
       margin-bottom: 20px;
     }
 
+   
     h2 {
-      font-size: 48px;
-      margin-bottom: 20px;
-      color: black;
+    font-size: 87px;
+    opacity: 0; 
+    color: #ffffff;; 
+    text-shadow: 0 0 9px #000000;
     }
+    
+   
+    @keyframes fadeIn {
+    from {
+    opacity: 0; 
+    }
+    to {
+    opacity: 1; 
+    }
+    }
+    
+    h2 {
+    animation: fadeIn 1s ease-in-out forwards; 
+    }
+    
 
     p {
       font-size: 18px;
@@ -65,14 +86,14 @@
     }
     
     
+    
   </style>
 </head>
 <body>
   <div id="particles-js"></div>
   <div id="header">
     <img id="logo" src="rajnitiai.svg" alt="RajnitiAI Logo">
-   <!-- <h2>AI-Powered Policy Research</h2>
-    <p>A community collecting data for policy research,<br>powered by AI</p> -->
+   <h2>AI-Powered Policy Research.</h2>
    <p> <a href="https://discord.com/invite/z2CtjqrMpg" class="btn"><i class="fab fa-discord"></i> Join Server</a> </p>
     
   </div>
