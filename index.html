@@ -53,7 +53,32 @@
     .tech-card img {
       width: 70px;
     }
+.partner-card {
+background: transparent;
+border: none;
+border-radius: 0;
+padding: 0;
+transition: 0.3s ease;
+}
 
+
+.partner-card:hover {
+transform: translateY(-4px);
+box-shadow: none;
+background: transparent;
+}
+
+
+.partner-logo {
+width: 120px;
+filter: grayscale(100%);
+transition: 0.3s ease;
+}
+
+
+.partner-card:hover .partner-logo {
+filter: grayscale(0%);
+}
     footer {
       background: #312f84;
       color: #fff;
@@ -176,6 +201,44 @@
 <p class="mt-2 fw-semibold">Matplotlib</p>
 </div>
 </div>
+</div>
+</div>
+</section>
+
+  <!-- RESEARCH PARTNERS & SUPPORTERS -->
+<section class="py-5 bg-white" id="partners">
+<div class="container text-center">
+<h2 class="section-title mb-4">Research Partners & Supporters</h2>
+<p class="text-muted mb-5">Organizations that help, inspire, or collaborate with our research efforts</p>
+
+
+<div class="row g-4 justify-content-center">
+
+
+<!-- Google -->
+<div class="col-6 col-md-3">
+<div class="partner-card p-3">
+<img src="assets/Google_logo.svg" class="partner-logo" alt="Google" />
+</div>
+</div>
+
+
+<!-- Kaggle -->
+<div class="col-6 col-md-3">
+<div class="partner-card p-3">
+<img src="assets/Kaggle_logo.svg" class="partner-logo" alt="Kaggle" />
+</div>
+</div>
+
+
+<!-- Gono Bishwabidyalay -->
+<div class="col-6 col-md-3">
+<div class="partner-card p-3">
+<img src="assets/Gono_Bishwabidyalay_Logo.svg" class="partner-logo" alt="Gono Bishwabidyalay" />
+</div>
+</div>
+
+
 </div>
 </div>
 </section>
